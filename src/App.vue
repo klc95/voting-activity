@@ -1,20 +1,21 @@
 <template>
   <div id="app">
-    <MobilePreview/>
+    <BasicSettingsPage/>
   </div>
 </template>
 
 <script>
-import MobilePreview from '@/components/MobilePreview'
-
+import BasicSettingsPage from './components/BasicSettingsPage.vue'
 export default {
   name: 'App',
   components: {
-    MobilePreview
+    BasicSettingsPage
   }
 }
 </script>
 
 <style>
-
+    *{
+      background-color: #F3F4F7;
+    }
 </style>
