@@ -1,4 +1,5 @@
 <template>
+<div>
     <div class='container'>
         <div class='wrap'>
             <div class='activity_title'>新建投票活动</div>
@@ -33,6 +34,9 @@
         </div> 
         <div class='voting_items'>暂无投票项</div>
     </div>
+ 
+ </div>   
+
 </template>
 
 <script>
@@ -45,8 +49,8 @@ export default {
 <style scoped lang="less">
    .container{
         box-sizing: border-box;
-        transform: scale(0.375);
-        transform-origin: top right;
+        // transform: scale(0.375);
+        // transform-origin: top right;
         overflow-x: hidden;   
         border-radius: 6px;
         border: 2px solid #EDEDF0;
@@ -181,13 +185,12 @@ export default {
 
     .searching_wrap{
         background: #FFFFFF;
+        box-shadow: 0 3px 14px rgb(0 0 0 / 4%);
         border-radius: 2px;
         margin-left: 16px;
         margin-right: 16px;
         margin-top: 20px;
         padding: 35px;
-        display: flex;
-        align-items: center;
         .searching_input{
             font-size: 30px;
             width: 80%;

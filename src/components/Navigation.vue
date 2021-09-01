@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
+  <div class="wrapper">
     <a class="logo" href="https://www.kuaizhan.com/" alt='快'>
       <img src="//cdn.kuaizhan.com/res/homepage/images/logo-kuaizhan-new.png?v=5.0" />
     </a>
     <div class="vote_form">
       <span>投票</span>
-      <i>x</i>
+      <i>^</i>
     </div>
     <div class="right_part">
       <div class="right_content">
@@ -26,8 +26,8 @@ export default {
 };
 </script>
 
-<style scoped>
-    .container{
+<style scoped lang="less">
+    .wrapper{
       box-sizing: border-box;
       width: 100%;
       height: 60px;
@@ -92,6 +92,6 @@ export default {
 
     .vote_form:hover, .item:hover {
       cursor: pointer;
-      color: blue;
+      color: #68aeff;
     }
 </style>
