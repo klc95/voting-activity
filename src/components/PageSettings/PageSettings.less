@@ -1,0 +1,249 @@
+
+.container {
+  padding: 0px 50px 40px 50px;
+  max-width: 1104px;
+  margin: 60px auto 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.create_steps {
+  height: 154px;
+  margin-bottom: 50px;
+  .title {
+    padding: 38px 38px 57px;
+    text-align: center;
+    font-size: 36px;
+    font-family: PingFangSC-Light;
+  }
+  .settings {
+    width: 100%;
+    margin: auto;
+    font-size: 0;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    :nth-child(2) {
+      .head {
+        .head_inner {
+          display: block;
+          width: 26px;
+          height: 26px;
+          line-height: 24px;
+          margin-right: 8px;
+          text-align: center;
+          border: 1px solid #ccc;
+          border-radius: 50%;
+          font-size: 14px;
+          text-align: center;
+          border-color: #2d8cf0;
+          background-color: #2d8cf0;
+          color: #fff;
+        }
+      }
+    }
+
+    .settings_item {
+      display: flex;
+      vertical-align: top;
+      position: relative;
+      flex-wrap: nowrap;
+      text-align: center;
+    }
+  }
+
+  .head {
+    .head_inner {
+      display: block;
+      width: 26px;
+      height: 26px;
+      line-height: 24px;
+      margin-right: 8px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      font-size: 14px;
+      text-align: center;
+      color: #ccc;
+    }
+  }
+
+  .main {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    padding-right: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+  }
+
+  .tail {
+    width: 350px;
+    position: absolute;
+    left: 100px;
+    top: 13px;
+    padding: 0 0 0 10px;
+    i {
+      display: inline-block;
+      width: 100%;
+      height: 1px;
+      vertical-align: top;
+      background: #e9eaec;
+      border-radius: 1px;
+      position: relative;
+      ::after {
+        content: "";
+        width: 0;
+        height: 100%;
+        background: #e9eaec;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+}
+
+.panel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  position: relative;
+  min-height: 600px;
+  padding-top: 68px;
+  .second_step {
+    padding: 0 40px 70px 40px;
+    background-color: #fff;
+    height: 1020px;
+  }
+}
+
+.block {
+  width: 50%;
+  .item_title {
+    font-family: Roboto, PingFang SC, Lantinghei SC, Microsoft Yahei,
+      Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+    color: #151515;
+    letter-spacing: 0;
+    font-size: 14px;
+    min-width: 100px;
+    text-align: right;
+    line-height: 32px;
+  }
+  .item_input {
+    margin-left: 14px;
+    width: calc(100% - 100px);
+    line-height: 32px;
+  }
+  .voting_theme,
+  .voting_layout,
+  .display_setup {
+    display: flex;
+    margin-bottom: 28px;
+    height: 36px;
+  }
+
+  .voting_layout{
+    .radio_group {
+      display: flex;
+      align-items: center;
+      line-height: 32px;
+      .radio_item {
+        display: flex;
+        align-items: center;
+        margin-right: 8px;
+        span {
+          margin-left: 3px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .voting_items_ranking {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 28px;
+  }
+
+  .voting_custom_sharing {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 346px;
+    margin-bottom: 28px;
+  }
+
+  .sharing_picture, .sharing_headline, .sharing_digest{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 28px;
+    .sharing_info{
+      margin-right: 5px;
+    }
+  }
+
+  .display_setup{
+    .item_input{
+      .setting_item{
+        display: flex;
+        padding: 10px 0;
+        border: 1px solid #E0DFE7;
+        height: 150px;
+        .setting_info{
+          width: 80px;
+          min-width: 80px;
+          text-align: right;
+          margin-right: 10px;
+        }
+        .item{
+          .item_checked{
+            cursor: pointer;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            input{
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+    .setting_item:nth-child(1){
+      height: 80px;
+      .item{
+          display: flex;
+          flex-wrap: wrap;
+          .item_checked{
+            display: flex;
+            margin-right: 8px;
+          }
+      }
+    }
+    .setting_item:nth-child(2){
+      height: 120px;
+    }
+  }
+}
+
+
+.mobile_preview {
+  position: absolute;
+  bottom: 120px;
+  left: 360px;
+  transform: scale(0.375);
+}
+
+
+
+.footer {
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+  Button {
+    font-size: 18px;
+    width: 285px;
+    height: 46px;
+  }
+}
+
