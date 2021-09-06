@@ -1,15 +1,21 @@
 <template>
   <div id="app">
-    <BasicSettingsPage/>
+    <!-- <BasicSettings/> -->
+    <!-- <PageSettings/> -->
+    <AdvancedSettings/>
   </div>
 </template>
 
 <script>
-import BasicSettingsPage from './components/BasicSettingsPage.vue'
+// import BasicSettings from './components/BasicSettings/BasicSettings.vue'
+// import PageSettings from './components/PageSettings/PageSettings.vue'
+import AdvancedSettings from './components/AdvancedSettings/AdvancedSettings.vue'
 export default {
   name: 'App',
   components: {
-    BasicSettingsPage
+    // BasicSettings
+    // PageSettings
+    AdvancedSettings
   }
 }
 </script>
