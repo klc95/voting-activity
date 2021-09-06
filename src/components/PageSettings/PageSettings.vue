@@ -172,9 +172,8 @@
         </div>
       </div>
       <div class="footer">
-        <Button style="width: 146px; height: 46px; margin-right: 24px"
-          >上一步</Button
-        >
+        <Button style="width: 146px; height: 46px; margin-right: 24px">上一步
+        </Button>
         <Button type="primary">保存并进入下一步</Button>
       </div>
     </div>
