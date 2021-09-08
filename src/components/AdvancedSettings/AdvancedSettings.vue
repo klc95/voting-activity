@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="panel">
-        <div class="first_step">
+        <div class="third_step">
           <div class="part_one" style="margin-left: -8px; margin-right: -8px">
             <div class="block">
               <div class="voting_rule">
@@ -171,65 +171,67 @@
                     <span slot="open">开</span>
                     <span slot="close">关</span>
                   </i-switch>
-                  <div class="modify_item">
-                    <span>按钮文字</span>
-                    <Input
-                      v-model="value"
-                      clearable
-                      style="width: 200px"
-                      maxlength="30"
-                    />
-                  </div>
-                  <div class="modify_item">
-                    <span>投票成功</span>
-                    <Input
-                      v-model="value"
-                      clearable
-                      style="width: 200px"
-                      maxlength="30"
-                    />
-                  </div>
-                  <div class="modify_item">
-                    <span>当日投票超限</span>
-                    <Input
-                      v-model="value5"
-                      clearable
-                      style="width: 200px"
-                      maxlength="30"
-                    />
-                  </div>
-                  <div class="modify_item">
-                    <span>投票总量超限</span>
-                    <Input
-                      v-model="value6"
-                      clearable
-                      style="width: 200px"
-                      maxlength="30"
-                    />
-                  </div>
-                  <div class="modify_item">
-                    <span>投票未开始</span>
-                    <Input
-                      v-model="value7"
-                      clearable
-                      style="width: 200px"
-                      maxlength="30"
-                    />
-                  </div>
-                  <div class="modify_item">
-                    <span>投票已结束</span>
-                    <Input v-model="value8" clearable style="width: 200px" />
-                  </div>
-                  <div class="modify_item">
-                    <span>投票活动暂停</span>
-                    <Input v-model="value9" clearable style="width: 200px" />
+                  <div v-show="switch4" class="hidden_part">
+                    <div class="modify_item">
+                      <span>&emsp;&emsp;&nbsp;按钮文字</span>
+                      <Input
+                        v-model="value"
+                        clearable
+                        style="width: 200px"
+                        maxlength="30"
+                      />
+                    </div>
+                    <div class="modify_item">
+                      <span>&emsp;&emsp;&nbsp;投票成功</span>
+                      <Input
+                        v-model="value"
+                        clearable
+                        style="width: 200px"
+                        maxlength="30"
+                      />
+                    </div>
+                    <div class="modify_item">
+                      <span>当日投票超限</span>
+                      <Input
+                        v-model="value5"
+                        clearable
+                        style="width: 200px"
+                        maxlength="30"
+                      />
+                    </div>
+                    <div class="modify_item">
+                      <span>投票总量超限</span>
+                      <Input
+                        v-model="value6"
+                        clearable
+                        style="width: 200px"
+                        maxlength="30"
+                      />
+                    </div>
+                    <div class="modify_item">
+                      <span>&emsp;&nbsp;投票未开始</span>
+                      <Input
+                        v-model="value7"
+                        clearable
+                        style="width: 200px"
+                        maxlength="30"
+                      />
+                    </div>
+                    <div class="modify_item">
+                      <span>&emsp;&nbsp;投票已结束</span>
+                      <Input v-model="value8" clearable style="width: 200px" />
+                    </div>
+                    <div class="modify_item">
+                      <span>投票活动暂停</span>
+                      <Input v-model="value9" clearable style="width: 200px" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="mobile_preview"><MobilePreview /></div>
         </div>
+        <div class="mobile_preview"><MobilePreview /></div>
       </div>
 
       <div class="footer">
@@ -316,5 +318,11 @@ export default {
   margin-left: 10px;
   text-align: left;
   width: 300px;
+}
+
+.ivu-select-placeholder{
+  display: block;
+  height: 36px!important;
+  line-height: 36px!important;
 }
 </style>
