@@ -173,5 +173,6 @@ export default {
 <style>
 .el-upload-dragger {
   width: 300px !important;
+  height: auto !important;;
 }
 </style>
